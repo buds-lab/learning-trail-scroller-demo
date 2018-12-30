@@ -8,64 +8,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="topnav">
-  <img src="outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" > 
-  <img class="logo" src="Thicker Final logo-01.jpg" alt="logo">
-  <img class="sde50logo" src="sde50 and nus logo combined.png" alt="institution logos">
-  <div class="pageheading"> Wellness Trail</div>
-</div>
-<!-- <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#About SDE4">About SDE4</a>
-  <a href="#Water Trail">Water Trail</a>
-  <a href="#Wellness Trail">Wellness Trail</a>
-  <a href="#Tropical Architecture Trail">Tropical Architecture Trail</a>
-  <a href="#Hybrid Cooling Trail"> Hybrid Cooling Trail</a>
-  <a href="#Net Zero Energy Trail">Net Zero Energy Trail</a>
-  <a href="#Biophilic Trail"> Biophilic Trail</a> -->
-</div>
-<span onclick="openNav()"></span>
-<div class="container">
-  <div id='graphic'>
-    <div id='sections'>
-      <section class="step">
-        <div class="title">Well Certification</div>
-  
-            SDE4 has achieved a gold certification mainly for its achievements in air and lighting. SDE4 has maximised these through the floating boxes concept, where a shallow plan depth and porous layout allows for cross-breezes and natural lighting.
-            
-      </section> 
-      <section class="step">
-        <div class="title">Lighting</div>
-            With diffused natural light entering the building, SDE4 allows the occupants internal clock to remain synchronized, improving sleep patterns and boosting occupant health and wellbeing.
-      </section>
-      <section class="step">
-        <div class="title">Air</div>
-            SDE4 incorporates fresh air through natural ventilation of classroom spaces. However, if air quality outside is not favourable, operable windows allow the class to utilise the hybrid cooling system instead.
-      </section>
-      <section class="step">
-        <div class="title">Movement</div>
-            Put simply, physical activity matters for more than just our physical health. The intent of the Movement concept in WELL is to promote movement, physical activity and active living and discourage sedentary behaviors. To facilitate movement, SDE4 integrates strategies such as active staircases, with no escalators included on site.
-      </section>
-      <section class="step">
-        <div class="title">NUS Policy</div>
-        Text not ready yet
-      </section>
-      <section class="step">
-        <div class="title">Future Technologies</div>
-        Text not ready yet
-      </section> 
-    </div>
-    <div id='vis'>
-    </div>
-    <div id="extra-space">
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <h2>Introduction</h2>
+    <hr>
+    <a href="about_sde_4.html">About SDE4</a>
+    <a href="sde_learning_trail.html">SDE Learning Trail</a>
+    <hr>
+    <h2>Trails</h2>
+    <hr>
+    <a href="water_trail.html">Water</a>
+    <a href="wellness_trail.html">Wellness</a>
+    <a href="tropical_architecture_trail">Tropical Architecture</a>
+    <a href="hybrid_cooling_trail"> Hybrid Cooling</a>
+    <a href="net_zero_energy_trail">Net Zero Energy</a>
+    <a href="biophilic_trail"> Biophilic</a>
+  </div>
+
+
+  <div class="topnav">
+    <span style="cursor:pointer" onclick="openNav()"><img src="outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" ></span>
+    <img class="logo" src="Thicker Final logo-01.jpg" alt="logo">
+    <img class="sde50logo" src="sde50 and nus logo combined.png" alt="institution logos">
+    <div class="pageheading"> About SDE4</div>
+  </div>
+
+
+  <div class="container">
+    <div id='graphic'>
+      <div id='sections'>
+        <section class="step">
+          <div class="title"> Building Introduction</div>
+    
+              Text not ready yet
+              
+        </section> 
+        <section class="step">
+          <div class="title">Integrated Design Process</div>
+              
+              Text not ready yet
+
+
+        </section>
+        <section class="step">
+          <div class="title">Programmatic Requirements</div>
+              
+              Text not ready yet
+
+        </section>
+        <section class="step">
+          <div class="title">Net Zero Energy Target</div>
+              
+              Text not ready yet
+
+        </section>
+      </div>
+      <div id='vis'>
+      </div>
+      <div id="extra-space">
+      </div>
     </div>
   </div>
-</div>
 
-<!-- <div class="demobox" class="sections"> </div>  -->
+  <!-- <div class="demobox" class="sections"> </div>  -->
 
-<script src="lib/d3.js"></script>
-<script src="js/scroller.js"></script>
-<script src="js/sections.js"></script>
+  <script src="lib/d3.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/sections.js"></script>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "18%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+  }
+  </script>
 </body>
 </html>
