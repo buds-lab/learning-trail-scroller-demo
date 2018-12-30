@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Learning Trail</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <h2>Introduction</h2>
+    <hr>
+    <a href="#About_SDE4">About SDE4</a>
+    <a href="#SDE_Learning_Trail">SDE Learning Trail</a>
+    <hr>
+    <h2>Trails</h2>
+    <hr>
+    <a href="#Water_Trail">Water</a>
+    <a href="#Wellness_Trail">Wellness</a>
+    <a href="#Tropical_Architecture_Trail">Tropical Architecture</a>
+    <a href="#Hybrid_Cooling_Trail"> Hybrid Cooling</a>
+    <a href="#Net_Zero_Energy_Trail">Net Zero Energy</a>
+    <a href="#Biophilic_Trail"> Biophilic</a>
+  </div>
+
+
+  <div class="topnav">
+    <span style="cursor:pointer" onclick="openNav()"><img src="outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" ></span>
+    <img class="logo" src="Thicker Final logo-01.jpg" alt="logo">
+    <img class="sde50logo" src="sde50 and nus logo combined.png" alt="institution logos">
+    <div class="pageheading"> Wellness Trail</div>
+  </div>
+
+
+  <div class="container">
+    <div id='graphic'>
+      <div id='sections'>
+        <section class="step">
+          <div class="title">Well Certification</div>
+    
+              SDE4 has achieved a gold certification mainly for its achievements in air and lighting. SDE4 has maximised these through the floating boxes concept, where a shallow plan depth and porous layout allows for cross-breezes and natural lighting.
+              
+        </section> 
+        <section class="step">
+          <div class="title">Lighting</div>
+              With diffused natural light entering the building, SDE4 allows the occupants internal clock to remain synchronized, improving sleep patterns and boosting occupant health and wellbeing.
+        </section>
+        <section class="step">
+          <div class="title">Air</div>
+              SDE4 incorporates fresh air through natural ventilation of classroom spaces. However, if air quality outside is not favourable, operable windows allow the class to utilise the hybrid cooling system instead.
+        </section>
+        <section class="step">
+          <div class="title">Movement</div>
+              Put simply, physical activity matters for more than just our physical health. The intent of the Movement concept in WELL is to promote movement, physical activity and active living and discourage sedentary behaviors. To facilitate movement, SDE4 integrates strategies such as active staircases, with no escalators included on site.
+        </section>
+        <section class="step">
+          <div class="title">NUS Policy</div>
+          Text not ready yet
+        </section>
+        <section class="step">
+          <div class="title">Future Technologies</div>
+          Text not ready yet
+        </section> 
+      </div>
+      <div id='vis'>
+      </div>
+      <div id="extra-space">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="demobox" class="sections"> </div>  -->
+
+  <script src="lib/d3.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/sections.js"></script>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "18%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+  }
+  </script>
+</body>
+</html>
