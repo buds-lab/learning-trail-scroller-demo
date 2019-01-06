@@ -1,7 +1,7 @@
 
 .topnav {
   width: 100%;
-  padding: 10px;
+  padding: .5rem;
   background-color: #ffffff;
   overflow: hidden;
   position: fixed;
@@ -13,31 +13,24 @@
 .hamburger-menu {
   color: rgba(84,84,84); 
   width: 3%;
-  display: inline;
+  display: inline-block;
   
 }
 
-/*@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}*/
-
 .pageheading{  
-  font-size: 25px;
+  font-size: 2em;
   color: rgb(84,84,84);
   font-family: "Open Sans", Arial, Helvetica;
   font-weight: bold;
-  vertical-align: middle;
-  padding-left: 10px;
+  vertical-align:middle;
+  padding-left: 1.5rem;
   display: inline-block;
 }
 
 .logo {
   display: inline-block;
-  margin-left: 550px;
+  text-align: center;
+  margin-left: 40em;
   width: 4%;
 }
 
@@ -49,6 +42,18 @@
 
 }
 
+@media screen and (max-width: 576px) {
+  .logo {width: 8%%;}
+  .pageheading {font-size: 3em;}
+  .sde50logo{ width: 20% }
+}
+
+@media screen and (max-width: 768px) {
+   .logo {width: 8%;}
+  .pageheading {font-size: 3em;}
+}
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -59,24 +64,23 @@
   background-color: #111;
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 100px;
+  padding-top: 4.9em;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
+  padding: .75rem .75rem .75rem 3rem;
+  text-decoration:none;
   font-family: "Open Sans", Arial, Helvetica;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
 
 h2{
-  padding: 0px 0px 0px 32px;
-  vertical-align: middle;
+  padding: 0rem 0rem 0rem 3rem;
   font-family: "Open Sans", Arial, Helvetica;
-  font-size: 23px;
+  font-size: 1.5em;
   color: #f1f1f1;
   font-weight: bold;
 }
@@ -93,14 +97,18 @@ h2{
   margin-left: 50px;
 }
 
-/*@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 576px) {
+  .sidenav {padding-top: 5em;}
+  .sidenav a {font-size: 1.25em;}
+}
 
-*/
+@media screen and (max-width: 768px) {
+  .sidenav {padding-top: 5em;}
+  .sidenav a {font-size: 1.25em;}
+}
+
 .container {
-  width: 890px;
-  /*align-content: center;*/
+  width: 890px;  
 }
 
 #graphic {
@@ -170,10 +178,6 @@ h2{
   font-weight: bold;
 }
 
-.cough-arrow {
-  stroke: #000;
-  stroke-width: 4px;
 
-}
 
 
