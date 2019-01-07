@@ -179,20 +179,23 @@ var scrollVis = function () {
     g.selectAll('.openvis-title')
       .attr('opacity', 0);
 
+      console.log(width)
     // count filler word count title
-    g.append('text')
-      .attr('class', 'title count-title highlight')
-      .attr('x', width / 2)
-      .attr('y', height / 3)
-      .text('Viz 2');
+    g.append('svg:image')
+      .attr('class', 'title example-image highlight')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/wellStandard.png");
 
     g.append('text')
-      .attr('class', 'sub-title count-title')
+      .attr('class', 'sub-title example-image')
       .attr('x', width / 2)
       .attr('y', (height / 3) + (height / 5))
       .text('');
 
-    g.selectAll('.count-title')
+    g.selectAll('.example-image')
       .attr('opacity', 0);
 
 
@@ -293,7 +296,7 @@ var scrollVis = function () {
     // activateFunctions are called each
     // time the active section changes
     activateFunctions[0] = showTitle;
-    activateFunctions[1] = showFillerTitle;
+    activateFunctions[1] = showFillerImage;
     activateFunctions[2] = showGrid;
     // activateFunctions[3] = highlightGrid;
     // activateFunctions[4] = showBar;
@@ -338,7 +341,7 @@ var scrollVis = function () {
    *
    */
   function showTitle() {
-    g.selectAll('.count-title')
+    g.selectAll('.example-image')
       .transition()
       .duration(0)
       .attr('opacity', 0);
@@ -350,14 +353,14 @@ var scrollVis = function () {
   }
 
   /**
-   * showFillerTitle - filler counts
+   * showFillerImage - filler counts
    *
    * hides: intro title
    * hides: square grid
    * shows: filler count title
    *
    */
-  function showFillerTitle() {
+  function showFillerImage() {
     g.selectAll('.openvis-title')
       .transition()
       .duration(0)
@@ -368,7 +371,7 @@ var scrollVis = function () {
       .duration(0)
       .attr('opacity', 0);
 
-    g.selectAll('.count-title')
+    g.selectAll('.example-image')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -383,7 +386,7 @@ var scrollVis = function () {
    *
    */
   function showGrid() {
-    g.selectAll('.count-title')
+    g.selectAll('.example-image')
       .transition()
       .duration(0)
       .attr('opacity', 0);
