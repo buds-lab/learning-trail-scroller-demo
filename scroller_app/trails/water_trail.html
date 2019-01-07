@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Learning Trail</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ 
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <h2>About</h2>
+    <hr>
+    <a href="index.html">SDE4</a>
+    <a href="sde_learning_trail.html">SDE Learning Trail</a>
+    <hr>
+    <h2>Trails</h2>
+    <hr>
+    <a href="water_trail.html">Water</a>
+    <a href="wellness_trail.html">Wellness</a>
+    <a href="tropical_architecture_trail.html">Tropical Architecture</a>
+    <a href="hybrid_cooling_trail.html"> Hybrid Cooling</a>
+    <a href="net_zero_energy_trail.html">Net Zero Energy</a>
+    <a href="biophilic_trail.html"> Biophilic</a>
+  </div>
+
+
+  <div class="topnav">
+    <span style="cursor:pointer" onclick="openNav()"><img src="assets/outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" ></span>
+    <img class="logo" src="assets/Thicker Final logo-01.jpg" alt="logo">
+    <span class="pageheading"> Water Trail</span>
+    <img class="sde50logo" src="assets/sde50 and nus logo combined.png" alt="institution logos">
+  </div>
+      
+
+<div class="container">
+    <div id='graphic'> 
+      <div id='sections'>
+        <section class="step">
+          <div class="title"> Water</div>
+    
+              Water is a precondition for living systems and an instrument of mental and spiritual well-being. Effective management of water - quality and volume - is critical towards achieving net zero energy targets for buildings in the tropics. SDE4 uses various strategies for water management while integrating water sensitive design features with land development.
+              
+        </section> 
+        <section class="step">
+          <div class="title">ABC Water Programme</div>
+              
+              Active, Beautiful, Clean(ABC) Waters programme outlines natural purification processes to protect water quality, enhance biodiversity and reduce flow of stormwater runoff from the built landscape. SDE4 is a ABC Waters site which uses a combination of on-site retention and rainwater harvesting strategies to bring the community closer to water.
+
+
+        </section>
+        <section class="step">
+          <div class="title">Water Feature</div>
+              
+             SDE4’s landscape seamlessly integrates greenery, water and community through spaces that support everyday activities, teaching and research. For instance, this water feature is only active when it rains - adding sound, texture and movement to the landscape while also being as a pedagogical tool for teaching and research.
+
+        </section>
+        <section class="step">
+          <div class="title">Bio Retention Basin</div>
+              
+              At SDE4, one third of the roof rainwater runoff is conveyed into the bioretention basin which slows down the stormwater run-off, embellishes the landscape and filters water through a dense vegetation layer. This harvested water is then used for irrigation and other non potable water demands of the building.
+
+        </section>
+      </div>
+      <div id='vis'>
+      </div>
+      <div id="extra-space">
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/d3.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/sections.js"></script>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+  }
+  </script>
+</body>
+</html>
