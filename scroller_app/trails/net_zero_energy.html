@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Learning Trail</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ 
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <h2>About</h2>
+    <hr>
+    <a href="index.html">SDE4</a>
+    <a href="sde_learning_trail.html">SDE Learning Trail</a>
+    <hr>
+    <h2>Trails</h2>
+    <hr>
+    <a href="water_trail.html">Water</a>
+    <a href="wellness_trail.html">Wellness</a>
+    <a href="tropical_architecture_trail.html">Tropical Architecture</a>
+    <a href="hybrid_cooling_trail.html"> Hybrid Cooling</a>
+    <a href="net_zero_energy_trail.html">Net Zero Energy</a>
+    <a href="biophilic_trail.html"> Biophilic</a>
+  </div>
+
+
+  <div class="topnav">
+    <span style="cursor:pointer" onclick="openNav()"><img src="assets/outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" ></span>
+    <img class="logo" src="assets/Thicker Final logo-01.jpg" alt="logo">
+    <span class="pageheading"> Net Zero Energy Trail</span>
+    <img class="sde50logo" src="assets/sde50 and nus logo combined.png" alt="institution logos">
+  </div>
+      
+
+<div class="container">
+    <div id='graphic'> 
+      <div id='sections'>
+        <section class="step">
+          <div class="title"> Net Zero Energy</div>
+    
+              SDE4 is a Net Zero Energy Building (NZEB), which means it consumes as much energy as it produces within its site boundary. Consumption and production figures are balanced over the course of one year, allowing for periods when consumption is higher than production and vice versa. For energy generation, SDE4 relies on an array of solar photovoltaic (PV) panels on its roof. It minimises energy demand by using energy efficient appliances and optimizing building systems like air conditioning and lighting. 
+              
+        </section> 
+
+        <section class="step">
+          <div class="title">Energy Generation</div>
+              
+              SDE4 uses the 1225 solar photoVoltaic cells istalled on its roof for renewable energy generation. These cells generate over 500 MWh of energy per year, which is equivalent to its annual energy consumption. 
+              The annual energy balance is be maintained with the city’s utility grid by supplying surplus energy back into the grid and drawing energy from the grid in case of higher demand.
+ 
+
+        </section>
+
+        <section class="step">
+          <div class="title">Demand Reduction</div>
+              
+             The innovative hybrid cooling system implemented in SDE4 plays a major role in the reduction of overall annual energy demand. By designing a single pass system with no recirculated air, the cooled spaces have 100% fresh air supply. Temperature and humidity levels of the delivered air are set higher than a conventional system and augmented with elevated air speed to provide optimum thermal comfort to the occupants. 
+            The use of energy efficient lighting fixtures, augmented by a building form that allows ample usable natural light into the spaces, results in a substantial reduction in lighting energy loads.
+
+        </section>
+
+          <div class="title">Future Technologies</div>
+              
+              Text not ready yet
+
+        </section>
+
+      </div>
+      <div id='vis'>
+      </div>
+      <div id="extra-space">
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/d3.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/sections.js"></script>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+  }
+  </script>
+</body>
+</html>
