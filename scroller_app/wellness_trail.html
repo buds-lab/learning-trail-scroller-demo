@@ -9,20 +9,20 @@
 </head>
 <body>
 
-
-  
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a>
+    <img src="assets/Thicker Final logo-01.jpg" width="100px">
+    </a>   
     <hr>
-    <h2>Introduction</h2>
+    <h2>About</h2>
     <hr>
-    <a href="Index.html">SDE4</a>
+    <a href="index.html">SDE4</a>
     <a href="sde_learning_trail.html">SDE Learning Trail</a>
     <hr>
     <h2>Trails</h2>
     <hr>
     <a href="water_trail.html">Water</a>
-    <a href="wellness_trail.html">Wellness</a>
+    <a class= "current" href="wellness_trail.html">Wellness</a>
     <a href="tropical_architecture_trail.html">Tropical Architecture</a>
     <a href="hybrid_cooling_trail.html"> Hybrid Cooling</a>
     <a href="net_zero_energy_trail.html">Net Zero Energy</a>
@@ -31,10 +31,7 @@
 
 
   <div class="topnav">
-    <span style="cursor:pointer" onclick="openNav()"><img src="assets/outline-menu-24px.svg" class="hamburger-menu" alt="hamburger-menu" ></span>
-    <img class="logo" src="assets/Thicker Final logo-01.jpg" alt="logo">
     <img class="sde50logo" src="assets/sde50 and nus logo combined.png" alt="institution logos">
-    <div class="pageheading"> Wellness Trail</div>
   </div>
 
   <div class="container">
@@ -79,14 +76,5 @@
   <script src="lib/d3.js"></script>
   <script src="js/scroller.js"></script>
   <script src="js/section-wellness.js"></script>
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "18%";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0%";
-  }
-  </script>
 </body>
 </html>
