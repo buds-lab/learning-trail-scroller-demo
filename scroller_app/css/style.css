@@ -1,38 +1,15 @@
 
+
 .topnav {
   width: 100%;
   padding: .5rem;
   background-color: #ffffff;
   overflow: hidden;
   position: fixed;
-  -webkit-box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
-  box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
+/*  -webkit-box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
+  box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);*/
 }
 
-
-.hamburger-menu {
-  color: rgba(84,84,84); 
-  width: 3%;
-  display: inline-block;
-  
-}
-
-.pageheading{  
-  font-size: 2em;
-  color: rgb(84,84,84);
-  font-family: "Open Sans", Arial, Helvetica;
-  font-weight: bold;
-  vertical-align:middle;
-  padding-left: 1.5rem;
-  display: inline-block;
-}
-
-.logo {
-  display: inline-block;
-  text-align: center;
-  margin-left: 40em;
-  width: 4%;
-}
 
 .sde50logo {
   display: inline-block;
@@ -56,38 +33,50 @@
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 16em;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #ffffff;
   overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 4.9em;
+  /*transition: 0.3s;*/
+  padding-top: 0.9em;
+   -webkit-box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
+  box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
 }
+
+
 
 .sidenav a {
   padding: .75rem .75rem .75rem 3rem;
-  text-decoration:none;
+  text-decoration: none;
   font-family: "Open Sans", Arial, Helvetica;
-  font-size: 1.25em;
-  color: #818181;
+  font-size: 1.2em;
+  color: #A9A9A9;
   display: block;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
 }
 
 h2{
   padding: 0rem 0rem 0rem 3rem;
   font-family: "Open Sans", Arial, Helvetica;
   font-size: 1.5em;
-  color: #f1f1f1;
-  font-weight: bold;
+  color: #808080;
+  font-weight: lighter;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #484848;
+  font-weight: bold;
 }
+
+.sidenav .current {
+  color: #484848;
+  font-weight: bolder;
+}
+
+
 
 .sidenav .closebtn {
   position: absolute;
@@ -107,12 +96,13 @@ h2{
   .sidenav a {font-size: 1.25em;}
 }
 
+
 .container {
   width: 890px;  
 }
 
 #graphic {
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 #sections {
