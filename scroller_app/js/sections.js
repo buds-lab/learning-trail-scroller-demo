@@ -18,7 +18,7 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 600;
+  var width = 900;
   var height = 520;
   var margin = { top: 0, left: 20, bottom: 40, right: 10 };
 
