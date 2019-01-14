@@ -130,5 +130,6 @@ function scroller() {
     dispatch.on(action, callback);
   };
 
+  console.log("Scroll function run")
   return scroll;
 }

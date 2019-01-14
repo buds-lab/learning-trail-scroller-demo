@@ -7,8 +7,13 @@
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="lib/d3.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/autoscroller.js"></script>
 </head>
-<body>
+<body onload = "autoscroller()">
  
 
  <div id="mySidenav" class="sidenav">
@@ -84,8 +89,6 @@
     </div>
   </div>
 
-  <script src="lib/d3.js"></script>
-  <script src="js/scroller.js"></script>
-  <script src="js/sections.js"></script>
+
 </body>
 </html>
