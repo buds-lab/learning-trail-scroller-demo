@@ -171,7 +171,6 @@ var scrollVis = function () {
     g.selectAll('.openvis-title')
       .attr('opacity', 0);
 
-      console.log(width)
 
 
 
@@ -330,6 +329,7 @@ var scrollVis = function () {
     scrolledSections.forEach(function (i) {
       activateFunctions[i]();
     });
+    console.log(activeIndex)
     lastIndex = activeIndex;
   };
 
