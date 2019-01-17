@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>The Learning Trail</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
+  <script src="https://s3-eu-west-1.amazonaws.com/steerpath-web-sdk/v3.1.5/steerpath-3.1.5.min.js"></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 </head>
-<body onload = "autoscroller()">
+<body onload = "">
  
 
   <div id="mySidenav" class="sidenav">
@@ -35,17 +39,19 @@
 
   <div class="topnav">
     <img class="sde50logo" src="assets/sde50 and nus logo combined.png" alt="institution logos">
+    
 
   </div>
       
+      
 
 <div class="container">
-    <div id='graphic'> 
-      <div id='sections'>
-        <section class="step">
-          <div class="title"> Building Introduction</div>
+    <div id='graphic' class = 'bg-dark'> 
+      <div id='sections' class= "bg-dark">
+        <section class="step bg-dark">
+          <div class="title"> Building Introductionn</div>
     
-              Text not ready yet
+              Text not ready yett
               
         </section> 
         <section class="step">
@@ -68,10 +74,13 @@
 
         </section>
       </div>
-      <div id='vis'>
+      <div id="fixedContainer">
+        <div id='vis' ></div>
+        <div class = 'mapstyle' id='mapboxMap'> </div>
+        
       </div>
-      <div id="extra-space">
-      </div>
+<!--       <div id="extra-space">
+      </div> -->
     </div>
   </div>
 
@@ -81,14 +90,35 @@
 
   <script src="js/autoscroller.js"></script>
 
- <!--  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "15%";
-  }
+ <script>
+      //initialise Mapbox
+      mapboxgl.accessToken = '';
+      var token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOiJiYXNlOnI7bnVzX3N0YXRpYzpyO251c19keW5hbWljOnIiLCJtZXRhQWNjZXNzIjoieSIsImp0aSI6IjkzYzM1Yjk5LTU4NWItNDE4NC1hZGZkLWVjYmE1OGMwNjc2ZSIsInN1YiI6Im51cyIsImVkaXRSaWdodHMiOiIiLCJlaWRBY2Nlc3MiOiJ5In0.EjYm2hieaJaEjr6Bsq9cHBIoModZyfTAB6ojJyWTXD8";
+      var styleUrl = "https://mapdata.eu.steerpath.com/style/web.json?access_token="+token
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0%";
-  }
-  </script> -->
+      var mapboxMap = new mapboxgl.Map({
+          container: 'mapboxMap',
+          style: styleUrl,
+          center: [103.770322, 1.296876],
+          zoom: 18.6,
+          bearing: 20,
+          pitch: 30
+      });
+
+      //options for SteerpathMap class
+      var options = {
+        inspectionZoomLevel: 15,
+        inspectionBoundaries: 0.5,
+        queryOnceMapLoad: true
+      };
+
+      //create instance of SteerpathMap
+      var steerpathMap = new steerpath.SteerpathMap(mapboxMap, options);
+      //create floor switcher control and add it to the map
+      var floorSwitcher = new steerpath.FloorSwitcherControl(steerpathMap);
+      mapboxMap.addControl(floorSwitcher, 'bottom-right');
+
+    </script>
+
 </body>
 </html>

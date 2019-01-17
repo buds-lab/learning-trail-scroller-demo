@@ -58,13 +58,13 @@
   /*transition: 0.3s;*/
 }
 
-h2{
+/*h2{
   padding: 0rem 0rem 0rem 3rem;
   font-family: "Open Sans", Arial, Helvetica;
   font-size: 1.5em;
   color: #808080;
   font-weight: lighter;
-}
+}*/
 
 .sidenav a:hover {
   color: #484848;
@@ -97,9 +97,6 @@ h2{
 }
 
 
-.container {
-  width: 890px;  
-}
 
 #graphic {
   padding-top: 150px;
@@ -112,6 +109,7 @@ h2{
   top: 0px;
   z-index: 90;
   padding-bottom: 200px;
+  background-color: None;
 }
 
 .step {
@@ -135,13 +133,41 @@ h2{
   height: 300px;
 }
 
-#vis {
+#fixedContainer {
   display: inline-block;
   position: fixed;
   top: 120px;
   z-index: 1;
   margin-left: 0;
+  background-color: blue;
+
+
+}
+
+.mapstyle{
+  position: static;
+  display: inline-block;
+  top: 120px;
+  z-index: 20;
+  margin-left: 0;
+  background-color: red;
+  height: 400px;
+  margin: 10px;
+
+}
+
+#vis {
+  position: static;
+  display: inline-block;
+  width: 80%;
+  top: 120px;
+  z-index: 20;
+  margin-left: 0;
+  float: left;
+  background-color: #ddd;
+
    /*height: 600px; 
+   
    width: 600px; 
    background-color: #ddd; */
 }
@@ -168,6 +194,6 @@ h2{
   font-weight: bold;
 }
 
-
-
-
+#mapboxMap{
+  background-color: blue
+}
