@@ -18,9 +18,9 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 900;
-  var height = 520;
-  var margin = { top: 0, left: 20, bottom: 40, right: 10 };
+  var width = 1200;
+  var height = 900;
+  var margin = { top: 0, left: 20, bottom: 30, right: 10 };
 
   // Keep track of which visualization
   // we are on and which was the last
@@ -178,9 +178,9 @@ var scrollVis = function () {
     // Example Image 1
     g.append('svg:image')
       .attr('class', 'title example-image highlight')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
+      .attr("width", width/1.5)
       .attr("height", height/1.5)
       .attr("xlink:href", "images/example.jpg");
 
@@ -191,9 +191,9 @@ var scrollVis = function () {
     // Example Image 2
     g.append('svg:image')
       .attr('class', 'title well-image highlight')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
+      .attr("width", width/1.5)
       .attr("height", height/1.5)
       .attr("xlink:href", "images/wellStandard.png");
 
