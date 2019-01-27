@@ -18,9 +18,9 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 600;
-  var height = 520;
-  var margin = { top: 0, left: 20, bottom: 40, right: 10 };
+  var width = 1200;
+  var height = 900;
+  var margin = { top: 0, left: 20, bottom: 30, right: 10 };
 
   // Keep track of which visualization
   // we are on and which was the last
@@ -155,50 +155,139 @@ var scrollVis = function () {
       .call(xAxisBar);
     g.select('.x.axis').style('opacity', 0);
 
-    // count openvis title
-    g.append('text')
-      .attr('class', 'title openvis-title')
-      .attr('x', width / 2)
-      .attr('y', height / 3)
-      .text('Viz 1');
+    // // count openvis title
+    // g.append('text')
+    //   .attr('class', 'title openvis-title')
+    //   .attr('x', width / 2)
+    //   .attr('y', height / 3)
+    //   .text('Viz 1');
 
-    g.append('text')
-      .attr('class', 'sub-title openvis-title')
-      .attr('x', width / 2)
-      .attr('y', (height / 3) + (height / 5))
-      .text('');
+    // g.append('text')
+    //   .attr('class', 'sub-title openvis-title')
+    //   .attr('x', width / 2)
+    //   .attr('y', (height / 3) + (height / 5))
+    //   .text('');
 
-    g.selectAll('.openvis-title')
-      .attr('opacity', 0);
+    // g.selectAll('.openvis-title')
+    //   .attr('opacity', 0);
 
       console.log(width)
 
 
-
-    // Example Image 1
+    //Wellness_trail 
     g.append('svg:image')
-      .attr('class', 'title example-image highlight')
+      .attr('class', 'title WELLNESS_TRAIL_1')
       .attr('x', width / 3)
       .attr('y', 0)
       .attr("width", width/2)
       .attr("height", height/1.5)
-      .attr("xlink:href", "images/example.jpg");
+      .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_TRAIL_1.jpg");
 
-    g.selectAll('.example-image')
+    g.selectAll('.WELLNESS_TRAIL_1')
       .attr('opacity', 0);
+
+    //Lighting
+    g.append('svg:image')
+      .attr('class', 'title LIGHTING_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/LIGHTING_1.jpg");
+
+    g.selectAll('.LIGHTING_1')
+      .attr('opacity', 0);
+
+
+    //Air
+    g.append('svg:image')
+      .attr('class', 'title AIR_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/AIR_1.jpg");
+
+    g.selectAll('.AIR_1')
+      .attr('opacity', 0);
+
+
+    //Movement
+    g.append('svg:image')
+      .attr('class', 'title MOVEMENT_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/MOVEMENT_1.jpg");
+
+    g.selectAll('.MOVEMENT_1')
+      .attr('opacity', 0);
+
+
+    //Sustainable NUS
+    g.append('svg:image')
+      .attr('class', 'title SUSTAINABLE_NUS_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/SUSTAINABLE_NUS_1.jpg");
+
+    g.selectAll('.SUSTAINABLE_NUS_1')
+      .attr('opacity', 0);
+
+  //IFC2CITYGML
+    g.append('svg:image')
+      .attr('class', 'title IFC2CITYGML_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/IFC2CITYGML_1.jpg");
+
+    g.selectAll('.IFC2CITYGML_1')
+      .attr('opacity', 0);
+
+
+//BIM-STP
+    g.append('svg:image')
+      .attr('class', 'title BIM_STP_1')
+      .attr('x', width / 3)
+      .attr('y', 0)
+      .attr("width", width/2)
+      .attr("height", height/1.5)
+      .attr("xlink:href", "images/WELLNESS_TRAIL/BIM_STP_1.jpg");
+
+    g.selectAll('.BIM_STP_1')
+      .attr('opacity', 0);
+
+
+
+    // // Example Image 1
+    // g.append('svg:image')
+    //   .attr('class', 'title example-image highlight')
+    //   .attr('x', width / 3)
+    //   .attr('y', 0)
+    //   .attr("width", width/2)
+    //   .attr("height", height/1.5)
+    //   .attr("xlink:href", "images/example.jpg");
+
+    // g.selectAll('.example-image')
+    //   .attr('opacity', 0);
 
     
-    // Example Image 2
-    g.append('svg:image')
-      .attr('class', 'title well-image highlight')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/wellStandard.png");
+    // // Example Image 2
+    // g.append('svg:image')
+    //   .attr('class', 'title well-image highlight')
+    //   .attr('x', width / 3)
+    //   .attr('y', 0)
+    //   .attr("width", width/2)
+    //   .attr("height", height/1.5)
+    //   .attr("xlink:href", "images/wellStandard.png");
 
-    g.selectAll('.well-image')
-      .attr('opacity', 0);
+    // g.selectAll('.well-image')
+    //   .attr('opacity', 0);
 
     // Add further images here
 
@@ -216,9 +305,15 @@ var scrollVis = function () {
   var setupSections = function () {
     // activateFunctions are called each
     // time the active section changes
-    activateFunctions[0] = showTitle;
-    activateFunctions[1] = showExampleImage;
-    activateFunctions[2] = showWellImage;
+       // activateFunctions[0] = showTitle;
+       activateFunctions[0] = showWellness;
+       activateFunctions[1] = showLighting;
+       activateFunctions[2] = showAir;
+       activateFunctions[3] = showMovement;
+       activateFunctions[4] = showSustainableNus;
+       activateFunctions[5] = showIfc2Citygml;
+       activateFunctions[6] = showBimstp;
+       // activateFunctions[7] = showIndoorLocalisation;
     // activateFunctions[3] = highlightGrid;
     // activateFunctions[4] = showBar;
     // activateFunctions[5] = showHistPart;
@@ -261,13 +356,39 @@ var scrollVis = function () {
    * shows: intro title
    *
    */
-  function showTitle() {
-    g.selectAll('.example-image')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
+  // function showTitle() {
+  //   g.selectAll('.example-image')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-    g.selectAll('.openvis-title')
+  //   g.selectAll('.openvis-title')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
+
+  //   function showTitle() {
+  //   g.selectAll('.example-image')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
+
+  //   g.selectAll('.openvis-title')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
+
+
+
+    function showWellness() {
+    // g.selectAll('.WEL')
+    //   .transition()
+    //   .duration(0)
+    //   .attr('opacity', 0);
+
+    g.selectAll('.WELLNESS_TRAIL_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -276,47 +397,130 @@ var scrollVis = function () {
   /**
   Funcitons need to be added here to show and hide images
    */
-  function showExampleImage() {
+  function showLighting() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.openvis-title')
+    g.selectAll('.WELLNESS_TRAIL_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.well-image')
+    g.selectAll('.AIR_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image we want to show
-    g.selectAll('.example-image')
+    g.selectAll('.LIGHTING_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-  function showWellImage() {
+  function showAir() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.example-image')
+    g.selectAll('.LIGHTING_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.square')
+    g.selectAll('.MOVEMENT_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.well-image')
+    g.selectAll('.AIR_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
 
+  function showMovement() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.AIR_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.SUSTAINABLE_NUS_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.MOVEMENT_1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+
+  function showSustainableNus() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.MOVEMENT_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.IFC2CITYGML_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.SUSTAINABLE_NUS_1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+  function showIfc2Citygml() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.SUSTAINABLE_NUS_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.BIM_STP_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.IFC2CITYGML_1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+    function showBimstp() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.IFC2CITYGML_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // // Remove opacity of previous object (scrolling up)
+    // g.selectAll('.BIM_STP_1')
+    //   .transition()
+    //   .duration(0)
+    //   .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.BIM_STP_1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
 
   /**
    * activate -
