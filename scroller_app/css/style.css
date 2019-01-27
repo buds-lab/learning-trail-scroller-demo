@@ -98,7 +98,7 @@ h2{
 
 
 .container {
-  width: 890px;  
+  width: 1300px;  
 }
 
 #graphic {
@@ -108,7 +108,7 @@ h2{
 #sections {
   position: relative;
   display: inline-block;
-  width: 250px;
+  width: 450px;
   top: 0px;
   z-index: 90;
   padding-bottom: 200px;
@@ -117,14 +117,14 @@ h2{
 .step {
   margin-bottom: 200px;
   font-family: "Open Sans", "TiemposTextWeb-Regular","Georgia";
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 24px;
+  line-height: 30px;
   color: #767678;
 }
 
 #sections .title {
   font-family: Open Sans,Arial,Helvetica,"san-serif";
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 2px;
   color: #262626;

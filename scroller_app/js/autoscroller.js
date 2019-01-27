@@ -9,7 +9,7 @@ var autoscroller = function(){
 	
 	var currentPathnameIndex = pathnames.indexOf(window.location.pathname)
 	console.log("body offset height " + document.body.offsetHeight)
-	console.log("window innder height " + window.innerHeight)
+	console.log("window inner height " + window.innerHeight)
 
 	var autoscroll = setInterval(function(){ 
 		window.scrollBy(0,1); 
