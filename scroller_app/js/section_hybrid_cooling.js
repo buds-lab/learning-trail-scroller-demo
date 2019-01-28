@@ -174,93 +174,81 @@ var scrollVis = function () {
       console.log(width)
 
 
-    //Tropical_Architecture_Trail 
+    //HYBRID_COOLING_TRAIL
     g.append('svg:image')
-      .attr('class', 'title TROPICAL_ARCHITECTURE_1')
+      .attr('class', 'title HYBRID_COOLING_TRAIL_1')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1)
-      .attr("height", height/1)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_1.jpg");
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
+      .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/HYBRID_COOLING_TRAIL_1.jpg");
 
-    g.selectAll('.TROPICAL_ARCHITECTURE_1')
+    g.selectAll('.HYBRID_COOLING_TRAIL_1')
       .attr('opacity', 0);
 
-    //Building Form
+    //Adaptive_Comfort
     g.append('svg:image')
-      .attr('class', 'title BUILDING_FORM_1')
-      .attr('x', width / 3)
+      .attr('class', 'title ADAPTIVE_COMFORT_1')
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/BUILDING_FORM_1.gif");
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
+      .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/ADAPTIVE_COMFORT_1.JPG");
 
-    g.selectAll('.BUILDING_FORM_1')
+    g.selectAll(' ADAPTIVE_COMFORT_1')
       .attr('opacity', 0);
 
 
-    //Envelope Design
-    g.append('gif:image')
-      .attr('class', ' title ENVELOPE_DESIGN_1')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/ENVELOPE_DESIGN_1.gif");
+    // //Mixed Mode
+    // g.append('gif:image')
+    //   .attr('class', ' title MIXED_MODE_1')
+    //   .attr('x', width / 3)
+    //   .attr('y', 0)
+    //   .attr("width", width/2)
+    //   .attr("height", height/1.5)
+    //   .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/MIXED_MODE_1.jpg");
 
-    g.selectAll('.ENVELOPE_DESIGN_1')
-      .attr('opacity', 0);
-
-
-    //Natural Ventilation
-    g.append('svg:image')
-      .attr('class', 'title NATURAL_VENTILATION_1')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/NATURAL_VENTILATION_1.gif");
-
-    g.selectAll('.NATURAL_VENTILATION_1')
-      .attr('opacity', 0);
+    // g.selectAll('.MIXED_MODE_1')
+    //   .attr('opacity', 0);
 
 
-    //landscape Design
-    g.append('svg:image')
-      .attr('class', 'title LANDSCAPE_1')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/LANDSCAPE_1.jpg");
+    // //Enhanced IEQ
+    // g.append('svg:image')
+    //   .attr('class', 'title ENHANCED_IEQ_1')
+    //   .attr('x', width / 3)
+    //   .attr('y', 0)
+    //   .attr("width", width/2)
+    //   .attr("height", height/1.5)
+    //   .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/ENHANCED_IEQ_1.jpg");
 
-    g.selectAll('.LANDSCAPE_1')
-      .attr('opacity', 0);
-
-  //SKYTIMBER
-    g.append('svg:image')
-      .attr('class', 'title SKY_TIMBER_1')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/SKY_TIMBER_1.jpg");
-
-    g.selectAll('.IFC2CITYGML_1')
-      .attr('opacity', 0);
+    // g.selectAll('.ENHANCED_IEQ_1')
+    //   .attr('opacity', 0);
 
 
-//BIM-STP
-    g.append('svg:image')
-      .attr('class', 'title NUS_CDL_T2_LAB_1')
-      .attr('x', width / 3)
-      .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/NUS_CDL_T2_LAB_1.jpg");
+    // //VIsualisation_Tool
+    // g.append('svg:image')
+    //   .attr('class', 'title VISUALISATION_TOOL_1')
+    //   .attr('x', width / 3)
+    //   .attr('y', 0)
+    //   .attr("width", width/2)
+    //   .attr("height", height/1.5)
+    //   .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/VISUALISATION_TOOL_1.png");
 
-    g.selectAll('.NUS_CDL_T2_LAB_1')
-      .attr('opacity', 0);
+    // g.selectAll('.VISUALISATION_TOOL_1')
+    //   .attr('opacity', 0);
+
+  // //SENSING
+  //   g.append('svg:image')
+  //     .attr('class', 'title SenSING_1')
+  //     .attr('x', width / 3)
+  //     .attr('y', 0)
+  //     .attr("width", width/2)
+  //     .attr("height", height/1.5)
+  //     .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/SenSING_1.jpg");
+
+  //   g.selectAll('.SenSING_1')
+  //     .attr('opacity', 0);
+
 
 
 
@@ -305,13 +293,13 @@ var scrollVis = function () {
     // activateFunctions are called each
     // time the active section changes
        // activateFunctions[0] = showTitle;
-       activateFunctions[0] = showTropicalArchitecture;
-       activateFunctions[1] = showBuildingForm;
-       activateFunctions[2] = showEnvelopeDesign;
-       activateFunctions[3] = showNaturalVentilation;
-       activateFunctions[4] = showLandscapeDesign;
-       activateFunctions[5] = showSkyTimber;
-       activateFunctions[6] = showT2Lab;
+       activateFunctions[0] = show1;
+       activateFunctions[1] = show2;
+       // activateFunctions[2] = show3;
+       // activateFunctions[3] = show4;
+       // activateFunctions[4] = show5;
+       // activateFunctions[5] = show6;
+       // activateFunctions[6] = show7;
        // activateFunctions[7] = showIndoorLocalisation;
     // activateFunctions[3] = highlightGrid;
     // activateFunctions[4] = showBar;
@@ -370,9 +358,9 @@ var scrollVis = function () {
 
 
 
-    function showTropicalArchitecture() {
+    function show1() {
 
-    g.selectAll('.TROPICAL_ARCHITECTURE_1')
+    g.selectAll('.HYBRID_COOLING_TRAIL_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -381,130 +369,130 @@ var scrollVis = function () {
   // // /**
   // // Funcitons need to be added here to show and hide images
   // //  */
-  function showBuildingForm(){
+  function show2(){
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.TROPICAL_ARCHITECTURE_1')
+    g.selectAll('.HYBRID_COOLING_TRAIL_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.ENVELOPE_DESIGN_1')
+    g.selectAll('.MIXED_MODE_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image we want to show
-    g.selectAll('.BUILDING_FORM_1')
+    g.selectAll('.ADAPTIVE_COMFORT_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-  function showEnvelopeDesign() {
-    // Remove opacity of previous object (scrolling down)
-    g.selectAll('.BUILDING_FORM_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
+  // function showEnvelopeDesign() {
+  //   // Remove opacity of previous object (scrolling down)
+  //   g.selectAll('.BUILDING_FORM_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-    // Remove opacity of previous object (scrolling up)
-    g.selectAll('.NATURAL_VENTILATION_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
+  //   // Remove opacity of previous object (scrolling up)
+  //   g.selectAll('.NATURAL_VENTILATION_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-    // Show Image that we want to show
-    g.selectAll('.ENVELOPE_DESIGN_1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1.0);
-  }
-
-
-  function showNaturalVentilation() {
-    // Remove opacity of previous object (scrolling down)
-    g.selectAll('.ENVELOPE_DESIGN_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    // Remove opacity of previous object (scrolling up)
-    g.selectAll('.LANDSCAPE_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    // Show Image that we want to show
-    g.selectAll('.NATURAL_VENTILATION_1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1.0);
-  }
+  //   // Show Image that we want to show
+  //   g.selectAll('.ENVELOPE_DESIGN_1')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
 
 
+  // function showNaturalVentilation() {
+  //   // Remove opacity of previous object (scrolling down)
+  //   g.selectAll('.ENVELOPE_DESIGN_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-  function showLandscapeDesign() {
-    // Remove opacity of previous object (scrolling down)
-    g.selectAll('.NATURAL_VENTILATION_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
+  //   // Remove opacity of previous object (scrolling up)
+  //   g.selectAll('.LANDSCAPE_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-    // Remove opacity of previous object (scrolling up)
-    g.selectAll('.SKY_TIMBER_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    // Show Image that we want to show
-    g.selectAll('.LANDSCAPE_1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1.0);
-  }
-
-
-  function showSkyTimber() {
-    // Remove opacity of previous object (scrolling down)
-    g.selectAll('.LANDSCAPE_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    // Remove opacity of previous object (scrolling up)
-    g.selectAll('.NUS_CDL_T2_LAB_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
-
-    // Show Image that we want to show
-    g.selectAll('.SKY_TIMBER_1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1.0);
-  }
+  //   // Show Image that we want to show
+  //   g.selectAll('.NATURAL_VENTILATION_1')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
 
 
-    function showT2Lab() {
-    // Remove opacity of previous object (scrolling down)
-    g.selectAll('.SKY_TIMBER_1')
-      .transition()
-      .duration(0)
-      .attr('opacity', 0);
 
-    // // Remove opacity of previous object (scrolling up)
-    // g.selectAll('.BIM_STP_1')
-    //   .transition()
-    //   .duration(0)
-    //   .attr('opacity', 0);
+  // function showLandscapeDesign() {
+  //   // Remove opacity of previous object (scrolling down)
+  //   g.selectAll('.NATURAL_VENTILATION_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
 
-    // Show Image that we want to show
-    g.selectAll('.NUS_CDL_T2_LAB_1')
-      .transition()
-      .duration(600)
-      .attr('opacity', 1.0);
-  }
+  //   // Remove opacity of previous object (scrolling up)
+  //   g.selectAll('.SenSING_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
+
+  //   // Show Image that we want to show
+  //   g.selectAll('.LANDSCAPE_1')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
+
+
+  // function showSkyTimber() {
+  //   // Remove opacity of previous object (scrolling down)
+  //   g.selectAll('.LANDSCAPE_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
+
+  //   // Remove opacity of previous object (scrolling up)
+  //   g.selectAll('.NUS_CDL_T2_LAB_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
+
+  //   // Show Image that we want to show
+  //   g.selectAll('.SKY_TIMBER_1')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
+
+
+  //   function showT2Lab() {
+  //   // Remove opacity of previous object (scrolling down)
+  //   g.selectAll('.SKY_TIMBER_1')
+  //     .transition()
+  //     .duration(0)
+  //     .attr('opacity', 0);
+
+  //   // // Remove opacity of previous object (scrolling up)
+  //   // g.selectAll('.BIM_STP_1')
+  //   //   .transition()
+  //   //   .duration(0)
+  //   //   .attr('opacity', 0);
+
+  //   // Show Image that we want to show
+  //   g.selectAll('.NUS_CDL_T2_LAB_1')
+  //     .transition()
+  //     .duration(600)
+  //     .attr('opacity', 1.0);
+  // }
 
   
 

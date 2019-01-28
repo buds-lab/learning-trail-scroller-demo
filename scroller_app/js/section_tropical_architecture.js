@@ -246,7 +246,7 @@ var scrollVis = function () {
       .attr("height", height/1.5)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/SKY_TIMBER_1.jpg");
 
-    g.selectAll('.IFC2CITYGML_1')
+    g.selectAll('.SKY_TIMBER_1')
       .attr('opacity', 0);
 
 
