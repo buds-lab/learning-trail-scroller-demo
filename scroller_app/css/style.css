@@ -122,6 +122,14 @@ h2{
   color: #767678;
 }
 
+.step.padding_top_section {
+  padding-top: 200px;
+  margin-bottom: 200px;
+  font-family: "Open Sans", "TiemposTextWeb-Regular","Georgia";
+  font-size: 24px;
+  line-height: 30px;
+  color: #767678;
+}
 #sections .title {
   font-family: Open Sans,Arial,Helvetica,"san-serif";
   font-size: 30px;
