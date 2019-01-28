@@ -2,6 +2,11 @@
 // Author: Prageeth Jayathissa
 // p.jayathissa@gmail.com
 
+
+var delayedAutoscroller = function(delay=1000) {
+	setTimeout(autoscroller, delay)
+}
+
 var autoscroller = function(){
 
 
