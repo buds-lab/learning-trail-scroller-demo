@@ -179,8 +179,8 @@ var scrollVis = function () {
       .attr('class', 'title TROPICAL_ARCHITECTURE_1')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1)
-      .attr("height", height/1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_1.jpg");
 
     g.selectAll('.TROPICAL_ARCHITECTURE_1')
@@ -189,10 +189,10 @@ var scrollVis = function () {
     //Building Form
     g.append('svg:image')
       .attr('class', 'title BUILDING_FORM_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/BUILDING_FORM_1.gif");
 
     g.selectAll('.BUILDING_FORM_1')
@@ -202,10 +202,10 @@ var scrollVis = function () {
     //Envelope Design
     g.append('gif:image')
       .attr('class', ' title ENVELOPE_DESIGN_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/ENVELOPE_DESIGN_1.gif");
 
     g.selectAll('.ENVELOPE_DESIGN_1')
@@ -215,10 +215,10 @@ var scrollVis = function () {
     //Natural Ventilation
     g.append('svg:image')
       .attr('class', 'title NATURAL_VENTILATION_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/NATURAL_VENTILATION_1.gif");
 
     g.selectAll('.NATURAL_VENTILATION_1')
@@ -228,10 +228,10 @@ var scrollVis = function () {
     //landscape Design
     g.append('svg:image')
       .attr('class', 'title LANDSCAPE_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/LANDSCAPE_1.jpg");
 
     g.selectAll('.LANDSCAPE_1')
@@ -240,10 +240,10 @@ var scrollVis = function () {
   //SKYTIMBER
     g.append('svg:image')
       .attr('class', 'title SKY_TIMBER_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/SKY_TIMBER_1.jpg");
 
     g.selectAll('.SKY_TIMBER_1')
@@ -253,10 +253,10 @@ var scrollVis = function () {
 //BIM-STP
     g.append('svg:image')
       .attr('class', 'title NUS_CDL_T2_LAB_1')
-      .attr('x', width / 3)
+      .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/2)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/NUS_CDL_T2_LAB_1.jpg");
 
     g.selectAll('.NUS_CDL_T2_LAB_1')

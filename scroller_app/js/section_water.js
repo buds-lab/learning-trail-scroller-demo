@@ -164,8 +164,8 @@ var scrollVis = function () {
       .attr('class', 'title WATER_TRAIL_STATION_1')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1.5)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_TRAIL_STATION_1.jpg");
 
     g.selectAll('.WATER_TRAIL_STATION_1')
@@ -176,8 +176,8 @@ var scrollVis = function () {
       .attr('class', 'title BIO_RETENTION_BASIN_STATION_1')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1.5)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/BIO_RETENTION_BASIN_STATION_1.jpg");
 
     g.selectAll('.BIO_RETENTION_BASIN_STATION_1')
@@ -188,8 +188,8 @@ var scrollVis = function () {
       .attr('class', 'title ABC_WATER_PROGRAMME_01')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1.5)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/ABC_WATER_PROGRAMME_01.jpg");
 
     g.selectAll('.ABC_WATER_PROGRAMME_01')
@@ -200,8 +200,8 @@ var scrollVis = function () {
       .attr('class', 'title water_feature_station_1')
       .attr('x', width / 8)
       .attr('y', 0)
-      .attr("width", width/1.5)
-      .attr("height", height/1.5)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/water_feature_station_1.jpg");
 
     g.selectAll('.water_feature_station_1')
