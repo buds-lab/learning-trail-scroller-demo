@@ -10,7 +10,7 @@ var delayedAutoscroller = function(delay=1000) {
 var autoscroller = function(){
 
 
-	const pathnames = ["/index.html", "/water_trail.html", "/wellness_trail.html", "/tropical_architecture_trail.html", "/hybrid_cooling_trail.html", "/net_zero_energy_trail.html", "/biophilic_trail.html"]
+	const pathnames = ["/index.html", "/sde_learning_trail.html","/water_trail.html", "/wellness_trail.html", "/tropical_architecture_trail.html", "/hybrid_cooling_trail.html", "/net_zero_energy_trail.html", "/biophilic_trail.html"]
 	
 	var currentPathnameIndex = pathnames.indexOf(window.location.pathname)
 	console.log("body offset height " + document.body.offsetHeight)
@@ -24,7 +24,7 @@ var autoscroller = function(){
 		window.scrollTo(0,0);
 
 
-		if (currentPathnameIndex === 6){
+		if (currentPathnameIndex === pathnames.length-1){
 			document.location.href = pathnames[0]
 		}
 		else{

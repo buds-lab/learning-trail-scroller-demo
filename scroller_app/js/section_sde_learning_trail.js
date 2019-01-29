@@ -173,82 +173,82 @@ var scrollVis = function () {
 
       console.log(width)
 
-    //sde4 main
+    //introduction
     g.append('svg:image')
-      .attr('class', 'title SDE4_Main_1')
+      .attr('class', 'title INTRO_1')
       .attr('x', width / 8)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE4_Main_1.jpg");
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/INTRO_1.jpg");
 
-    g.selectAll('.SDE4_Main_1')
+    g.selectAll('.INTRO_1')
       .attr('opacity', 0);
 
 
-    //separate building masses
+    //six trails
     g.append('svg:image')
-      .attr('class', 'title SDE4_Graphic_Panels_02')
+      .attr('class', 'title SIX_TRAIL_1')
       .attr('x', width / 8)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE4_Graphic Panels_02.jpg");
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SIX_TRAIL_1.jpg");
 
-    g.selectAll('.SDE4_Graphic_Panels_02')
+    g.selectAll('.SIX_TRAIL_1')
       .attr('opacity', 0);
 
-    //informal learning
+    //digitalisation
     g.append('svg:image')
-      .attr('class', 'title SDE4_Graphic_Panels_01')
+      .attr('class', 'title DIGITALISATION_1')
       .attr('x', width / 8)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE4_Graphic Panels_01.jpg");
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/DIGITALISATION_1.jpg");
 
-    g.selectAll('.SDE4_Graphic_Panels_01')
+    g.selectAll('.DIGITALISATION_1')
       .attr('opacity', 0);
 
 
-    //living laboratory
+    //feedback
     g.append('gif:image')
-      .attr('class', ' title SDE4_Graphic_Panels_03')
+      .attr('class', ' title FEEDBACK_1')
       .attr('x', width / 8)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE4_Graphic Panels_03.jpg");
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/FEEDBACK_1.jpg");
 
-    g.selectAll('.SDE4_Graphic_Panels_03')
+    g.selectAll('.FEEDBACK_1')
       .attr('opacity', 0);
 
 
     //active social spaces
     g.append('svg:image')
-      .attr('class', 'title SDE4_Graphic_Panels_04')
+      .attr('class', 'title CURATION_1')
       .attr('x', width / 8)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE4_Graphic Panels_04.jpg");
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/CURATION_1.jpg");
 
-    g.selectAll('.SDE4_Graphic_Panels_04')
+    g.selectAll('.CURATION_1')
       .attr('opacity', 0);
 
 
 
-  // //SENSING
-  //   g.append('svg:image')
-  //     .attr('class', 'title SenSING_1')
-  //     .attr('x', width / 8)
-  //     .attr('y', 0)
-  //     .attr("width", width/1.3)
-  //     .attr("height", height/1.3)
-  //     .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/SenSING_1.jpg");
+  //STATIONS
+    g.append('svg:image')
+      .attr('class', 'title STATIONS_1')
+      .attr('x', width / 8)
+      .attr('y', 0)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
+      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/STATIONS_1.jpg");
 
-  //   g.selectAll('.SenSING_1')
-  //     .attr('opacity', 0);
+    g.selectAll('.STATIONS_1')
+      .attr('opacity', 0);
 
    
   };
@@ -269,7 +269,7 @@ var scrollVis = function () {
        activateFunctions[2] = showC;
        activateFunctions[3] = showD;
        activateFunctions[4] = showE;
-       // activateFunctions[5] = showF;
+       activateFunctions[5] = showF;
        // activateFunctions[6] = show7;
        // activateFunctions[7] = showIndoorLocalisation;
     // activateFunctions[3] = highlightGrid;
@@ -331,7 +331,7 @@ var scrollVis = function () {
 
     function showA(){
 
-    g.selectAll('.SDE4_Main_1')
+    g.selectAll('.INTRO_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -342,19 +342,19 @@ var scrollVis = function () {
   // // //  */
   function showB(){
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.SDE4_Main_1')
+    g.selectAll('.INTRO_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.SDE4_Graphic_Panels_01')
+    g.selectAll('.DIGITALISATION_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image we want to show
-    g.selectAll('.SDE4_Graphic_Panels_02')
+    g.selectAll('.SIX_TRAIL_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -362,19 +362,19 @@ var scrollVis = function () {
 
   function showC() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.SDE4_Graphic_Panels_02')
+    g.selectAll('.SIX_TRAIL_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.SDE4_Graphic_Panels_03')
+    g.selectAll('.DIGITALISATION_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.SDE4_Graphic_Panels_01')
+    g.selectAll('.STATIONS_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -383,19 +383,19 @@ var scrollVis = function () {
 
   function showD() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.SDE4_Graphic_Panels_01')
+    g.selectAll('.STATIONS_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.SDE4_Graphic_Panels_04')
+    g.selectAll('.FEEDBACK_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.SDE4_Graphic_Panels_03')
+    g.selectAll('.DIGITALISATION_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -404,44 +404,44 @@ var scrollVis = function () {
 
   function showE() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.SDE4_Graphic_Panels_03')
+    g.selectAll('.DIGITALISATION_1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
-    // // Remove opacity of previous object (scrolling up)
-    // g.selectAll('.')
-    //   .transition()
-    //   .duration(0)
-    //   .attr('opacity', 0);
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.CURATION_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.SDE4_Graphic_Panels_04')
+    g.selectAll('.FEEDBACK_1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
 
-  // function showF() {
-  //   // Remove opacity of previous object (scrolling down)
-  //   g.selectAll('.VISUALISATION_TOOL_1')
-  //     .transition()
-  //     .duration(0)
-  //     .attr('opacity', 0);
+  function showF() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.FEEDBACK_1')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
 
-  //   // // Remove opacity of previous object (scrolling up)
-  //   // g.selectAll('.NUS_CDL_T2_LAB_1')
-  //   //   .transition()
-  //   //   .duration(0)
-  //   //   .attr('opacity', 0);
+    // // Remove opacity of previous object (scrolling up)
+    // g.selectAll('.NUS_CDL_T2_LAB_1')
+    //   .transition()
+    //   .duration(0)
+    //   .attr('opacity', 0);
 
-  //   // Show Image that we want to show
-  //   g.selectAll('.SenSING_1')
-  //     .transition()
-  //     .duration(600)
-  //     .attr('opacity', 1.0);
-  // }
+    // Show Image that we want to show
+    g.selectAll('.CURATION_1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
 
 
   
