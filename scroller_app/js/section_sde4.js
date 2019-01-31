@@ -159,7 +159,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_1.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_1.jpg");
 
     g.selectAll('.image1')
       .attr('opacity', 0);
@@ -171,7 +171,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_2.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_2.jpg");
 
     g.selectAll('.image2')
       .attr('opacity', 0);
@@ -184,7 +184,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_3.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_3.jpg");
 
     g.selectAll('.image3')
       .attr('opacity', 0);
@@ -197,7 +197,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_4.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_4.jpg");
 
     g.selectAll('.image4')
       .attr('opacity', 0);
@@ -210,7 +210,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_5.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_5.jpg");
 
     g.selectAll('.image5')
       .attr('opacity', 0);
@@ -222,7 +222,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_6.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_6.jpg");
 
     g.selectAll('.image6')
       .attr('opacity', 0);
@@ -235,7 +235,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_7.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_7.jpg");
 
     g.selectAll('.image7')
       .attr('opacity', 0);
@@ -248,7 +248,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/SDE_LEARNING_TRAIL/SDE_LEARNING_8.jpg");
+      .attr("xlink:href", "images/SDE4/SDE_8.jpg");
 
     g.selectAll('.image8')
       .attr('opacity', 0);
