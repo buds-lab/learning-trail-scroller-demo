@@ -40,3 +40,18 @@ var autoscroller = function(){
 return autoscroller
 
 }
+
+var scrollMobile = function(value){
+	let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    let offset = (windowWidth <700) ? value : 0;
+
+    //window.scrollTo(0,offset)
+
+    scrollInterval = setInterval(function(){
+        if ( window.scrollY < offset ) {
+            window.scrollBy( 0, 10 );
+        }
+        else clearInterval(scrollInterval); 
+    },5);
+
+}
