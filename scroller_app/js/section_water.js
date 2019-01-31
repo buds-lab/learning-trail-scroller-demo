@@ -224,7 +224,7 @@ var scrollVis = function () {
        activateFunctions[2] = showThird;
        activateFunctions[3] = showFourth;
        activateFunctions[4] = doNothing;
-       
+
        // activateFunctions[5] = showSixth;
        // activateFunctions[6] = showSeventh;
        // activateFunctions[7] = showEighth;
@@ -242,7 +242,7 @@ var scrollVis = function () {
     // Most sections do not need to be updated
     // for all scrolling and so are set to
     // no-op functions.
-    for (var i = 0; i < 9; i++) {
+    for (var i = -1; i < 9; i++) {
       updateFunctions[i] = function () {};
     }
 
@@ -450,6 +450,7 @@ var scrollVis = function () {
    * @param progress
    */
   chart.update = function (index, progress) {
+    console.log(index)
     updateFunctions[index](progress);
   };
 
