@@ -171,7 +171,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_2.jpg");
+      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_2.gif");
 
     g.selectAll('.image2')
       .attr('opacity', 0);
@@ -184,7 +184,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_3.jpg");
+      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_3.gif");
 
     g.selectAll('.image3')
       .attr('opacity', 0);
@@ -197,7 +197,7 @@ var scrollVis = function () {
       .attr('y', 0)
       .attr("width", width/1.1)
       .attr("height", height/1.1)
-      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_4.jpg");
+      .attr("xlink:href", "images/TROPICAL_ARCHITECTURE_TRAIL/TROPICAL_ARCHITECTURE_4.gif");
 
     g.selectAll('.image4')
       .attr('opacity', 0);
@@ -292,7 +292,7 @@ var scrollVis = function () {
     // Most sections do not need to be updated
     // for all scrolling and so are set to
     // no-op functions.
-    for (var i = 0; i < 9; i++) {
+    for (var i = -1; i < 9; i++) {
       updateFunctions[i] = function () {};
     }
 
