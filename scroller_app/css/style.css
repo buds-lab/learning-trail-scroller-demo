@@ -1,4 +1,12 @@
-
+body {
+  padding-left: 16em;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 700px) {
+  body {
+    padding-left: 1em
+  }
+}
 
 .topnav {
   width: 100%;
@@ -6,8 +14,6 @@
   background-color: #ffffff;
   overflow: hidden;
   position: fixed;
-/*  -webkit-box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
-  box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);*/
 }
 
 
@@ -40,7 +46,6 @@
   left: 0;
   background-color: #ffffff;
   overflow-x: hidden;
-  /*transition: 0.3s;*/
   padding-top: 0.9em;
    -webkit-box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
   box-shadow: 0px 3px 10px -2px rgba(84,84,84,0.59);
@@ -55,7 +60,6 @@
   font-size: 1.2em;
   color: #A9A9A9;
   display: block;
-  /*transition: 0.3s;*/
 }
 
 h2{
@@ -86,33 +90,44 @@ h2{
   margin-left: 50px;
 }
 
-@media screen and (max-width: 576px) {
-  .sidenav {padding-top: 5em;}
-  .sidenav a {font-size: 1.25em;}
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .sidenav {padding-top: 5em;}
-  .sidenav a {font-size: 1.25em;}
-}
 
 
 .container {
-  width: 1300px;  
+  width: 100%;  
 }
 
 #graphic {
   padding-top: 150px;
+  background-color: blue;
+  width: 100%;
+  margin-left: 0em;
 }
 
 #sections {
   position: relative;
   display: inline-block;
-  width: 450px;
+  width: 60%;
   top: 0px;
   z-index: 90;
   padding-bottom: 200px;
+  background-color: gray;
+
 }
+
+@media screen and (max-width: 700px) {
+  #graphic {
+    margin-left: 1em;
+  }
+}
+
 
 .step {
   margin-bottom: 200px;
@@ -122,14 +137,7 @@ h2{
   color: #767678;
 }
 
-.step.padding_top_section {
-  padding-top: 200px;
-  margin-bottom: 200px;
-  font-family: "Open Sans", "TiemposTextWeb-Regular","Georgia";
-  font-size: 24px;
-  line-height: 30px;
-  color: #767678;
-}
+
 #sections .title {
   font-family: Open Sans,Arial,Helvetica,"san-serif";
   font-size: 30px;
@@ -149,33 +157,8 @@ h2{
   top: 120px;
   z-index: 1;
   margin-left: 0;
- /*  height: 600px; 
-   width: 600px; */
-/*   background-color: #ddd; */
+  width: 40%;
+  height: 400px;
+  background-color: red;
 }
-
-#vis .title {
-  font-size:120px;
-  text-anchor: middle;
-}
-
-#vis .sub-title {
-  font-size:80px;
-  text-anchor: middle;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #666;
-  shape-rendering: crispEdges;
-}
-
-.highlight {
-  fill: #008080;
-  font-weight: bold;
-}
-
-
-
 
