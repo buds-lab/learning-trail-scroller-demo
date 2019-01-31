@@ -98,7 +98,9 @@ h2{
   }
 }
 
-
+.d3image {
+  overflow: hidden;
+}
 
 .container {
   width: 100%;  
@@ -114,7 +116,7 @@ h2{
 #sections {
   position: relative;
   display: inline-block;
-  width: 60%;
+  width: 50%;
   top: 0px;
   z-index: 90;
   padding-bottom: 200px;
@@ -157,7 +159,7 @@ h2{
   top: 120px;
   z-index: 1;
   margin-left: 0;
-  width: 40%;
+  width: 50%;
   height: 400px;
   background-color: red;
 }

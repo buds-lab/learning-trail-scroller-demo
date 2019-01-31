@@ -18,9 +18,12 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 1200;
-  var height = 900;
-  var margin = { top: 0, left: 20, bottom: 30, right: 10 };
+  let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  let windowHeight = screen.height;
+
+  var width = windowWidth/2.0;
+  var height =windowHeight/2.0;
+  var margin = { top: 0, left: 0, bottom: 30, right: 0 };
 
   // Keep track of which visualization
   // we are on and which was the last
@@ -176,11 +179,11 @@ var scrollVis = function () {
 
     //Wellness_trail 
     g.append('svg:image')
-      .attr('class', 'title WELLNESS_TRAIL_1')
-      .attr('x', width / 8)
+      .attr('class', 'title WELLNESS_TRAIL_1 d3image')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
+      .attr("width", width)
+      .attr("height", height)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_TRAIL_1.jpg");
 
     g.selectAll('.WELLNESS_TRAIL_1')
@@ -189,10 +192,10 @@ var scrollVis = function () {
     //Lighting
     g.append('svg:image')
       .attr('class', 'title LIGHTING_1')
-      .attr('x', width / 8)
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
+      .attr("width", width)
+      .attr("height", height)
       .attr("xlink:href", "images/WELLNESS_TRAIL/LIGHTING_1.jpg");
 
     g.selectAll('.LIGHTING_1')
@@ -202,7 +205,7 @@ var scrollVis = function () {
     //Air
     g.append('svg:image')
       .attr('class', 'title AIR_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -215,7 +218,7 @@ var scrollVis = function () {
     //Movement
     g.append('svg:image')
       .attr('class', 'title MOVEMENT_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -228,7 +231,7 @@ var scrollVis = function () {
     //Sustainable NUS
     g.append('svg:image')
       .attr('class', 'title SUSTAINABLE_NUS_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -240,7 +243,7 @@ var scrollVis = function () {
   //IFC2CITYGML
     g.append('svg:image')
       .attr('class', 'title IFC2CITYGML_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -253,7 +256,7 @@ var scrollVis = function () {
 //BIM-STP
     g.append('svg:image')
       .attr('class', 'title BIM_STP_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -266,7 +269,7 @@ var scrollVis = function () {
 //Indoor Localisation
     g.append('svg:image')
       .attr('class', 'title INDOOR_LOCALISATION_1')
-      .attr('x', width / 8)
+      .attr('x', -0)
       .attr('y', 0)
       .attr("width", width/1.3)
       .attr("height", height/1.3)
@@ -349,52 +352,6 @@ var scrollVis = function () {
 
   };
 
-  /**
-   * ACTIVATE FUNCTIONS
-   *
-   * These will be called their
-   * section is scrolled to.
-   *
-   * General pattern is to ensure
-   * all content for the current section
-   * is transitioned in, while hiding
-   * the content for the previous section
-   * as well as the next section (as the
-   * user may be scrolling up or down).
-   *
-   */
-
-  /**
-   * showTitle - initial title
-   *
-   * hides: count title
-   * (no previous step to hide)
-   * shows: intro title
-   *
-   */
-  // function showTitle() {
-  //   g.selectAll('.example-image')
-  //     .transition()
-  //     .duration(0)
-  //     .attr('opacity', 0);
-
-  //   g.selectAll('.openvis-title')
-  //     .transition()
-  //     .duration(600)
-  //     .attr('opacity', 1.0);
-  // }
-
-  //   function showTitle() {
-  //   g.selectAll('.example-image')
-  //     .transition()
-  //     .duration(0)
-  //     .attr('opacity', 0);
-
-  //   g.selectAll('.openvis-title')
-  //     .transition()
-  //     .duration(600)
-  //     .attr('opacity', 1.0);
-  // }
 
 
 
