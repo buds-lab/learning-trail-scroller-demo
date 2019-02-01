@@ -18,9 +18,12 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 1200;
-  var height = 900;
-  var margin = { top: 0, left: 20, bottom: 30, right: 10 };
+  let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  let windowHeight = screen.height;
+
+  var width = windowWidth/2.0;
+  var height =windowHeight/2.0;
+  var margin = { top: 0, left: 0, bottom: 30, right: 0 };
 
   // Keep track of which visualization
   // we are on and which was the last
@@ -138,116 +141,119 @@ var scrollVis = function () {
   };
 
 
-  /**
-   * setupVis - creates initial elements for all
-   * sections of the visualization.
-   *
-   * @param wordData - data object for each word.
-   * @param fillerCounts - nested data that includes
-   *  element for each filler word type.
-   * @param histData - binned histogram data
-   */
+
   var setupVis = function () {
-    // axis
+    
+
     g.append('g')
       .attr('class', 'x axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxisBar);
     g.select('.x.axis').style('opacity', 0);
 
-  // //  count openvis title
-  //   g.append('text')
-  //     .attr('class', 'title openvis-title')
-  //     .attr('x', width / 2)
-  //     .attr('y', height / 3)
-  //     .text('Viz 1');
 
-  //   g.append('text')
-  //     .attr('class', 'sub-title openvis-title')
-  //     .attr('x', width / 2)
-  //     .attr('y', (height / 3) + (height / 5))
-  //     .text('');
-
-  //   g.selectAll('.openvis-title')
-  //     .attr('opacity', 0);
-
-      console.log(width)
-
-
-    //NET_ZERO_ENERGY
+    //Wellness_trail 
     g.append('svg:image')
-      .attr('class', 'title NET_ZERO_ENERGY_TRAIL_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image1 ')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_TRAIL_1.jpg");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_1.jpg");
 
-    g.selectAll('.NET_ZERO_ENERGY_TRAIL_1')
+    g.selectAll('.image1')
       .attr('opacity', 0);
 
-    //ENERGY_GENERATION
+    //Lighting
     g.append('svg:image')
-      .attr('class', 'title ENERGY_GENERATION_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image2')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/ENERGY_GENERATION_1.jpg");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_2.jpg");
 
-    g.selectAll('.ENERGY_GENERATION_1')
+    g.selectAll('.image2')
       .attr('opacity', 0);
 
 
-    //DEMAND_REDUCTION
-    g.append('gif:image')
-      .attr('class', ' title DEMAND_REDUCTION_1')
-      .attr('x', width / 8)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/DEMAND_REDUCTION_1.jpg");
-
-    g.selectAll('.DEMAND_REDUCTION_1')
-      .attr('opacity', 0);
-
-
-    //CO_WORKING
+    //Air
     g.append('svg:image')
-      .attr('class', 'title CO_WORKING_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image3')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/CO_WORKING_1.jpg");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_3.jpg");
 
-    g.selectAll('.CO_WORKING_1')
+    g.selectAll('.image3')
       .attr('opacity', 0);
 
 
-    //SPACEMATCH
+    //Movement
     g.append('svg:image')
-      .attr('class', 'title SPACEMATCH_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image4')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/SPACEMATCH_1.png");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_4.jpg");
 
-    g.selectAll('.SPACEMATCH_1')
+    g.selectAll('.image4')
       .attr('opacity', 0);
 
-  // //SENSING
-  //   g.append('svg:image')
-  //     .attr('class', 'title SenSING_1')
-  //     .attr('x', width / 8)
-  //     .attr('y', 0)
-  //     .attr("width", width/1.3)
-  //     .attr("height", height/1.3)
-  //     .attr("xlink:href", "images/HYBRID_COOLING_TRAIL/SenSING_1.jpg");
 
-  //   g.selectAll('.SenSING_1')
-  //     .attr('opacity', 0);
+    //Sustainable NUS
+    g.append('svg:image')
+      .attr('class', 'title image5')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_5.jpg");
+
+    g.selectAll('.image5')
+      .attr('opacity', 0);
+
+  //IFC2CITYGML
+    g.append('svg:image')
+      .attr('class', 'title image6')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_6.jpg");
+
+    g.selectAll('.image6')
+      .attr('opacity', 0);
+
+
+//BIM-STP
+    g.append('svg:image')
+      .attr('class', 'title image7')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_7.jpg");
+
+    g.selectAll('.image7')
+      .attr('opacity', 0);
+
+
+//Indoor Localisation
+    g.append('svg:image')
+      .attr('class', 'title image8')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/NET_ZERO_ENERGY_TRAIL/NET_ZERO_ENERGY_8.jpg");
+
+    g.selectAll('.image8')
+      .attr('opacity', 0);
+
+
 
    
   };
@@ -263,14 +269,16 @@ var scrollVis = function () {
     // activateFunctions are called each
     // time the active section changes
        // activateFunctions[0] = showTitle;
-       activateFunctions[0] = showA;
-       activateFunctions[1] = showB;
-       activateFunctions[2] = showC;
-       activateFunctions[3] = showD;
-       activateFunctions[4] = showE;
-       // activateFunctions[5] = showF;
-       // activateFunctions[6] = show7;
-       // activateFunctions[7] = showIndoorLocalisation;
+       activateFunctions[-1] = doNothing;
+       activateFunctions[0] = showFirst;
+       activateFunctions[1] = showSecond;
+       activateFunctions[2] = showThird;
+       activateFunctions[3] = showFourth;
+       activateFunctions[4] = showFifth;
+       activateFunctions[5] = showSixth;
+       activateFunctions[6] = showSeventh;
+       activateFunctions[7] = showEighth;
+       activateFunctions[8] = doNothing;
     // activateFunctions[3] = highlightGrid;
     // activateFunctions[4] = showBar;
     // activateFunctions[5] = showHistPart;
@@ -284,166 +292,191 @@ var scrollVis = function () {
     // Most sections do not need to be updated
     // for all scrolling and so are set to
     // no-op functions.
-    for (var i = 0; i < 9; i++) {
+    for (var i = -1; i < 9; i++) {
       updateFunctions[i] = function () {};
     }
 
   };
 
-  /**
-   * ACTIVATE FUNCTIONS
-   *
-   * These will be called their
-   * section is scrolled to.
-   *
-   * General pattern is to ensure
-   * all content for the current section
-   * is transitioned in, while hiding
-   * the content for the previous section
-   * as well as the next section (as the
-   * user may be scrolling up or down).
-   *
-   */
+    //A little hack around to get the graphics to disapear over menu bar
+    function doNothing(){
+          g.selectAll('.image1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.0);
 
-  /**
-   * showTitle - initial title
-   *
-   * hides: count title
-   * (no previous step to hide)
-   * shows: intro title
-   *
-   */
-
-  //   function showTitle() {
-  //   g.selectAll('.example-image')
-  //     .transition()
-  //     .duration(0)
-  //     .attr('opacity', 0);
-
-  //   g.selectAll('.openvis-title')
-  //     .transition()
-  //     .duration(600)
-  //     .attr('opacity', 1.0);
-  // }
+    }
 
 
+    function showFirst() {
+    // g.selectAll('.WEL')
+    //   .transition()
+    //   .duration(0)
+    //   .attr('opacity', 0);
 
-    function showA(){
-
-    g.selectAll('.NET_ZERO_ENERGY_TRAIL_1')
+    g.selectAll('.image1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
+
+    g.selectAll('.image2')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.0);
+      
+
   }
 
-  // // // /**
-  // // // Funcitons need to be added here to show and hide images
-  // // //  */
-  function showB(){
+
+
+  // /**
+  // Funcitons need to be added here to show and hide images
+  //  */
+  function showSecond() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.NET_ZERO_ENERGY_TRAIL_1')
+    g.selectAll('.image1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.DEMAND_REDUCTION_1')
+    g.selectAll('.image3')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image we want to show
-    g.selectAll('.ENERGY_GENERATION_1')
+    g.selectAll('.image2')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-  function showC() {
+  function showThird() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.ENERGY_GENERATION_1')
+    g.selectAll('.image2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.CO_WORKING_1')
+    g.selectAll('.image4')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.DEMAND_REDUCTION_1')
+    g.selectAll('.image3')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
 
-  function showD() {
+  function showFourth() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.DEMAND_REDUCTION_1')
+    g.selectAll('.image3')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.SPACEMATCH_1')
+    g.selectAll('.image5')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.CO_WORKING_1')
+    g.selectAll('.image4')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
 
-  function showE() {
+
+  function showFifth() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.CO_WORKING_1')
+    g.selectAll('.image4')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image6')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image5')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+  function showSixth() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image5')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image7')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image6')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+    function showSeventh() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image6')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image8')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image7')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+      function showEighth() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image7')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // // Remove opacity of previous object (scrolling up)
-    // g.selectAll('.')
+    // g.selectAll('.image7')
     //   .transition()
     //   .duration(0)
     //   .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.SPACEMATCH_1')
+    g.selectAll('.image8')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-
-  // function showF() {
-  //   // Remove opacity of previous object (scrolling down)
-  //   g.selectAll('.VISUALISATION_TOOL_1')
-  //     .transition()
-  //     .duration(0)
-  //     .attr('opacity', 0);
-
-  //   // // Remove opacity of previous object (scrolling up)
-  //   // g.selectAll('.NUS_CDL_T2_LAB_1')
-  //   //   .transition()
-  //   //   .duration(0)
-  //   //   .attr('opacity', 0);
-
-  //   // Show Image that we want to show
-  //   g.selectAll('.SenSING_1')
-  //     .transition()
-  //     .duration(600)
-  //     .attr('opacity', 1.0);
-  // }
-
-
-  
 
   /**
    * activate -

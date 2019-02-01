@@ -18,9 +18,12 @@ HOW TO ADD NEW IMAGES
 var scrollVis = function () {
   // constants to define the size
   // and margins of the vis area.
-  var width = 1200;
-  var height = 900;
-  var margin = { top: 0, left: 20, bottom: 30, right: 10 };
+  let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  let windowHeight = screen.height;
+
+  var width = windowWidth/2.0;
+  var height =windowHeight/2.0;
+  var margin = { top: 0, left: 0, bottom: 30, right: 0 };
 
   // Keep track of which visualization
   // we are on and which was the last
@@ -138,74 +141,69 @@ var scrollVis = function () {
   };
 
 
-  /**
-   * setupVis - creates initial elements for all
-   * sections of the visualization.
-   *
-   * @param wordData - data object for each word.
-   * @param fillerCounts - nested data that includes
-   *  element for each filler word type.
-   * @param histData - binned histogram data
-   */
+
   var setupVis = function () {
-    // axis
+    
+
     g.append('g')
       .attr('class', 'x axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxisBar);
     g.select('.x.axis').style('opacity', 0);
 
-      console.log(width)  
 
-
-
-    // Water Trail Station
+    //Wellness_trail 
     g.append('svg:image')
-      .attr('class', 'title WATER_TRAIL_STATION_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image1 ')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/WATER_TRAIL/WATER_TRAIL_STATION_1.jpg");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/WATER_TRAIL/WATER_1.jpg");
 
-    g.selectAll('.WATER_TRAIL_STATION_1')
+    g.selectAll('.image1')
       .attr('opacity', 0);
 
-    // Bio Retention Basin
+    //Lighting
     g.append('svg:image')
-      .attr('class', 'title BIO_RETENTION_BASIN_STATION_1')
-      .attr('x', width / 8)
+      .attr('class', 'title image2')
+      .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/WATER_TRAIL/BIO_RETENTION_BASIN_STATION_1.jpg");
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/WATER_TRAIL/WATER_2.jpg");
 
-    g.selectAll('.BIO_RETENTION_BASIN_STATION_1')
+    g.selectAll('.image2')
       .attr('opacity', 0);
 
-// ABC Water Programme
-    g.append('svg:image')
-      .attr('class', 'title ABC_WATER_PROGRAMME_01')
-      .attr('x', width / 8)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/WATER_TRAIL/ABC_WATER_PROGRAMME_01.jpg");
 
-    g.selectAll('.ABC_WATER_PROGRAMME_01')
+    //Air
+    g.append('svg:image')
+      .attr('class', 'title image3')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/WATER_TRAIL/WATER_3.jpg");
+
+    g.selectAll('.image3')
       .attr('opacity', 0);
 
-      // Water Feature
-    g.append('svg:image')
-      .attr('class', 'title water_feature_station_1')
-      .attr('x', width / 8)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/WATER_TRAIL/water_feature_station_1.jpg");
 
-    g.selectAll('.water_feature_station_1')
+    //Movement
+    g.append('svg:image')
+      .attr('class', 'title image4')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr("width", width/1.1)
+      .attr("height", height/1.1)
+      .attr("xlink:href", "images/WATER_TRAIL/WATER_4.jpg");
+
+    g.selectAll('.image4')
       .attr('opacity', 0);
+
+
+
    
   };
 
@@ -219,11 +217,18 @@ var scrollVis = function () {
   var setupSections = function () {
     // activateFunctions are called each
     // time the active section changes
-    // activateFunctions[0] = showTitle;
-    activateFunctions[0] = showWaterTrailStation;
-    activateFunctions[1] = showBioRetentionBasinStation;
-    activateFunctions[2] = showAbc;
-    activateFunctions[3] = showWaterFeature;
+       // activateFunctions[0] = showTitle;
+       activateFunctions[-1] = doNothing;
+       activateFunctions[0] = showFirst;
+       activateFunctions[1] = showSecond;
+       activateFunctions[2] = showThird;
+       activateFunctions[3] = showFourth;
+       activateFunctions[4] = doNothing;
+
+       // activateFunctions[5] = showSixth;
+       // activateFunctions[6] = showSeventh;
+       // activateFunctions[7] = showEighth;
+       // activateFunctions[8] = doNothing;
     // activateFunctions[3] = highlightGrid;
     // activateFunctions[4] = showBar;
     // activateFunctions[5] = showHistPart;
@@ -237,101 +242,186 @@ var scrollVis = function () {
     // Most sections do not need to be updated
     // for all scrolling and so are set to
     // no-op functions.
-    for (var i = 0; i < 9; i++) {
+    for (var i = -1; i < 9; i++) {
       updateFunctions[i] = function () {};
     }
 
   };
 
-  /**
-   * ACTIVATE FUNCTIONS
-   *
-   * These will be called their
-   * section is scrolled to.
-   *
-   * General pattern is to ensure
-   * all content for the current section
-   * is transitioned in, while hiding
-   * the content for the previous section
-   * as well as the next section (as the
-   * user may be scrolling up or down).
-   *
-   */
+    //A little hack around to get the graphics to disapear over menu bar
+    function doNothing(){
+          g.selectAll('.image1')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.0);
 
-  /**
-   * showTitle - initial title
-   *
-   * hides: count title
-   * (no previous step to hide)
-   * shows: intro title
-   *
-   */
+    }
 
-function showWaterTrailStation() {
-    // Show Image we want to show
-    g.selectAll('.WATER_TRAIL_STATION_1')
+
+    function showFirst() {
+    // g.selectAll('.WEL')
+    //   .transition()
+    //   .duration(0)
+    //   .attr('opacity', 0);
+
+    g.selectAll('.image1')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
+
+    g.selectAll('.image2')
+      .transition()
+      .duration(600)
+      .attr('opacity', 0.0);
+      
+
   }
-  /**
-  Funcitons need to be added here to show and hide images
-   */
-  function showBioRetentionBasinStation() {
+
+
+
+  // /**
+  // Funcitons need to be added here to show and hide images
+  //  */
+  function showSecond() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.WATER_TRAIL_STATION_1')
+    g.selectAll('.image1')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.ABC_WATER_PROGRAMME_01')
+    g.selectAll('.image3')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image we want to show
-    g.selectAll('.BIO_RETENTION_BASIN_STATION_1')
+    g.selectAll('.image2')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-  function showAbc() {
+  function showThird() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.BIO_RETENTION_BASIN_STATION_1')
+    g.selectAll('.image2')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Remove opacity of previous object (scrolling up)
-    g.selectAll('.showWaterFeature')
+    g.selectAll('.image4')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.ABC_WATER_PROGRAMME_01')
+    g.selectAll('.image3')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
   }
 
-function showWaterFeature() {
+
+  function showFourth() {
     // Remove opacity of previous object (scrolling down)
-    g.selectAll('.ABC_WATER_PROGRAMME_01')
+    g.selectAll('.image3')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image5')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image4')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+
+  function showFifth() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image4')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image6')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image5')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+  function showSixth() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image5')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image7')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image6')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+
+    function showSeventh() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image6')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Remove opacity of previous object (scrolling up)
+    g.selectAll('.image8')
+      .transition()
+      .duration(0)
+      .attr('opacity', 0);
+
+    // Show Image that we want to show
+    g.selectAll('.image7')
+      .transition()
+      .duration(600)
+      .attr('opacity', 1.0);
+  }
+
+      function showEighth() {
+    // Remove opacity of previous object (scrolling down)
+    g.selectAll('.image7')
       .transition()
       .duration(0)
       .attr('opacity', 0);
 
     // // Remove opacity of previous object (scrolling up)
-    // g.selectAll('.BIO_RETENTION_BASIN_STATION_1')
+    // g.selectAll('.image7')
     //   .transition()
     //   .duration(0)
     //   .attr('opacity', 0);
 
     // Show Image that we want to show
-    g.selectAll('.water_feature_station_1')
+    g.selectAll('.image8')
       .transition()
       .duration(600)
       .attr('opacity', 1.0);
@@ -360,6 +450,7 @@ function showWaterFeature() {
    * @param progress
    */
   chart.update = function (index, progress) {
+    console.log(index)
     updateFunctions[index](progress);
   };
 
