@@ -169,8 +169,9 @@ h2{
   top: 120px;
   z-index: 1;
   margin-left: 0;
-  width: 50%;
+  width: 40%;
   height: 400px;
+  background-color: gray;
 
 }
 

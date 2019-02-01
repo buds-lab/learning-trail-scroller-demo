@@ -157,7 +157,7 @@ var scrollVis = function () {
       .attr('class', 'title image1 ')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
+      .attr("width", width/1.3)
       .attr("height", height/1.1)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_1.jpg");
 
@@ -169,7 +169,7 @@ var scrollVis = function () {
       .attr('class', 'title image2')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
+      .attr("width", width/1.3)
       .attr("height", height/1.1)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_2.jpg");
 
