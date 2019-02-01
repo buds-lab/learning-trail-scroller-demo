@@ -76,7 +76,7 @@ function scroller() {
 
     // For responsive design. Add offset if navbar goes on top
     let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    let offset = (windowWidth <700) ? 400 : 0
+    let offset = (windowWidth <700) ? -200 : 0
 
     sections.each(function (d, i) {
       var top = this.getBoundingClientRect().top;
@@ -99,7 +99,11 @@ function scroller() {
     var pos = window.pageYOffset - 10 - containerStart;
     var sectionIndex = d3.bisect(sectionPositions, pos);
 
-    sectionIndex = Math.min(sections.size() - 1, sectionIndex);
+  // For responsive design. Add offset if navbar goes on top
+    let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    let sectionOffset = (windowWidth <700) ? 1 : 0
+
+    sectionIndex = Math.min(sections.size() - 1, sectionIndex) - sectionOffset;
 
     if (currentIndex !== sectionIndex) {
       // @v4 you now `.call` the dispatch callback
