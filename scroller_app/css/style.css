@@ -1,12 +1,17 @@
+
+/*Generic Body Padding
+*/
 body {
   padding-left: 16em;
   font-family: sans-serif;
 }
 @media screen and (max-width: 700px) {
   body {
-    padding-left: 1em
+    padding: 0.5em
   }
 }
+
+/* Top Nav which also contains the SDE4 logo*/
 
 .topnav {
   width: 100%;
@@ -36,6 +41,7 @@ body {
   .pageheading {font-size: 3em;}
 }
 
+/* Side Navigation which turns to full column width on monile */
 
 .sidenav {
   height: 100%;
@@ -99,9 +105,6 @@ h2{
 }
 
 
-.container {
-  width: 100%;  
-}
 
 #graphic {
   padding-top: 150px;
@@ -145,8 +148,19 @@ h2{
   line-height: 1.2em;
 }
 
+@media screen and (max-width: 700px) {
+  .step {
+    font-size: 16px;
+    line-height: 20px
+  }
+  #sections .title {
+    font-size: 30px;
+  }
+}
+
+
 #extra-space {
-  height: 300px;
+  height: 0px;
 }
 
 #vis {
