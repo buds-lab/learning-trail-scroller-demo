@@ -73,13 +73,17 @@ function scroller() {
     // of the first section.
     sectionPositions = [];
     var startPos;
+
+    // For responsive design. Add offset if navbar goes on top
+    let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    let offset = (windowWidth <700) ? -200 : 0
+
     sections.each(function (d, i) {
       var top = this.getBoundingClientRect().top;
-
       if (i === 0) {
         startPos = top;
       }
-      sectionPositions.push(top - startPos);
+      sectionPositions.push(top - startPos + offset);
     });
     containerStart = container.node().getBoundingClientRect().top + window.pageYOffset;
   }
@@ -94,11 +98,12 @@ function scroller() {
   function position() {
     var pos = window.pageYOffset - 10 - containerStart;
     var sectionIndex = d3.bisect(sectionPositions, pos);
-    // For responsive design. Add offset if navbar goes on top
+
+  // For responsive design. Add offset if navbar goes on top
     let windowWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    let offset = (windowWidth <700) ? 1 : 0
-    console.log(offset)
-    sectionIndex = Math.min(sections.size() - 1, sectionIndex)-offset;
+    let sectionOffset = (windowWidth <700) ? 1 : 0
+
+    sectionIndex = Math.min(sections.size() - 1, sectionIndex) - sectionOffset;
 
     if (currentIndex !== sectionIndex) {
       // @v4 you now `.call` the dispatch callback
