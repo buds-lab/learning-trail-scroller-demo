@@ -10,18 +10,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="lib/d3.js"></script>
   <script src="js/scroller.js"></script>
-  <script src="js/section_sde4.js"></script>
+  <script src="js/section_sde_learning_trail.js"></script>
+  <script src="js/autoscroller.js"></script>
 </head>
-<body>
- 
+
+<body onload = "scrollMobile(700)">
 
   <div id="mySidenav" class="sidenav">
     <a>
     <img src="assets/Thicker Final logo-01.jpg" width="100px">
     </a>   
     <hr>
-    <a  class = "current" href="index.html">SDE Learning Trail</a>
-    <a href="how_does_it_work.html">How Does It Work?</a>
+    <a href="index.html">SDE Learning Trail</a>
+    <a  class = "current" href="how_does_it_work.html">How Does It Work?</a>
     <hr>
     <h2>Trails</h2>
     <hr>
@@ -43,28 +44,41 @@
 <div class="container">
     <div id='graphic'> 
       <div id='sections'>
-        
-        <section class="step">
-          <div class="title"> SDE Learning Trail @ SDE4</div>
-    
-              SDE Learning Trail is a simple, easy to use web application to collect comfort feedback from building occupants and visitors while they interact, learn and engage with SDE4.
-              
-        </section>
 
         <section class="step">
-          <div class="title"> NZEB @ SDE</div>
+          <div class="title">Building Systems as Trails</div>
     
-              NZEB@SDE is Singapore's first purpose-built Net Zero Energy Building(NZEB). SDE4 was launched officially by Minister Heng Swee Keat on 30th of January, 2019. 
+              SDE Learning Trail describes SDE4’s six different building systems as trails for occupants and building visitors.
               
         </section> 
-
         <section class="step">
-          <div class="title">First Users</div>
+          <div class="title">Stations</div>
               
-            During the SDE4 launch, users interacted with our app for the first time.   
+              Each trail is composed of a number of physical "stations", placed at different areas in SDE4.
 
         </section>
 
+        <section class="step">
+          <div class="title">Digitalisation of Stations</div>
+              
+              QR codes and a web application are used to connect stations with information and visualizations explaining each building system. 
+
+        </section>
+
+        <section class="step">
+          <div class="title">Comfort Feedback</div>
+              
+              Users are prompted to provide comfort feedback while going through each trail. This helps the building team understand how occupants feel in the new building.   
+
+        </section>
+
+        <section class="step">
+          <div class="title">Curation of Digital Content</div>
+              
+              This new human-building interaction framework helps occupants and visitors to easily engage with SDE4 to appreciate its design, construction, and sustainability features. 
+
+        </section>
+        <section class="step"> </section>
 
       </div>
       <div id='vis'>
