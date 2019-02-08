@@ -158,7 +158,7 @@ var scrollVis = function () {
       .attr('x', 0)
       .attr('y', 0)
       .attr("width", width/1.3)
-      .attr("height", height/1.1)
+      .attr("height", height/1.8)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_1.jpg");
 
     g.selectAll('.image1')
@@ -170,7 +170,7 @@ var scrollVis = function () {
       .attr('x', 0)
       .attr('y', 0)
       .attr("width", width/1.3)
-      .attr("height", height/1.1)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_2.jpg");
 
     g.selectAll('.image2')
@@ -182,8 +182,8 @@ var scrollVis = function () {
       .attr('class', 'title image3')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_3.jpg");
 
     g.selectAll('.image3')
@@ -195,8 +195,8 @@ var scrollVis = function () {
       .attr('class', 'title image4')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WATER_TRAIL/WATER_4.jpg");
 
     g.selectAll('.image4')

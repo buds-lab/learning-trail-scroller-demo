@@ -157,8 +157,8 @@ var scrollVis = function () {
       .attr('class', 'title image1 ')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.8)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_1.jpg");
 
     g.selectAll('.image1')
@@ -169,8 +169,8 @@ var scrollVis = function () {
       .attr('class', 'title image2')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_2.jpg");
 
     g.selectAll('.image2')
@@ -182,8 +182,8 @@ var scrollVis = function () {
       .attr('class', 'title image3')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_3.jpg");
 
     g.selectAll('.image3')
@@ -195,8 +195,8 @@ var scrollVis = function () {
       .attr('class', 'title image4')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_4.jpg");
 
     g.selectAll('.image4')
@@ -208,8 +208,8 @@ var scrollVis = function () {
       .attr('class', 'title image5')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_5.jpg");
 
     g.selectAll('.image5')
@@ -220,8 +220,8 @@ var scrollVis = function () {
       .attr('class', 'title image6')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_6.jpg");
 
     g.selectAll('.image6')
@@ -233,8 +233,8 @@ var scrollVis = function () {
       .attr('class', 'title image7')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_7.jpg");
 
     g.selectAll('.image7')
@@ -246,8 +246,8 @@ var scrollVis = function () {
       .attr('class', 'title image8')
       .attr('x', 0)
       .attr('y', 0)
-      .attr("width", width/1.1)
-      .attr("height", height/1.1)
+      .attr("width", width/1.3)
+      .attr("height", height/1.3)
       .attr("xlink:href", "images/WELLNESS_TRAIL/WELLNESS_8.jpg");
 
     g.selectAll('.image8')
