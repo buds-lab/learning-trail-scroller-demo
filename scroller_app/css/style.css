@@ -163,6 +163,12 @@ h2{
   height: 0px;
 }
 
+@media screen and (min-width: 1400px) {
+  #extra-space{
+    height:500px;
+  }
+}
+
 #vis {
   display: inline-block;
   position: fixed;
