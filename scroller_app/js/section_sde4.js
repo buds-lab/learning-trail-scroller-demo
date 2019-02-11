@@ -190,68 +190,6 @@ var scrollVis = function () {
       .attr('opacity', 0);
 
 
-    //Movement
-    g.append('svg:image')
-      .attr('class', 'title image4')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE_4.jpg");
-
-    g.selectAll('.image4')
-      .attr('opacity', 0);
-
-
-    //Sustainable NUS
-    g.append('svg:image')
-      .attr('class', 'title image5')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE_5.jpg");
-
-    g.selectAll('.image5')
-      .attr('opacity', 0);
-
-  //IFC2CITYGML
-    g.append('svg:image')
-      .attr('class', 'title image6')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE_6.jpg");
-
-    g.selectAll('.image6')
-      .attr('opacity', 0);
-
-
-//BIM-STP
-    g.append('svg:image')
-      .attr('class', 'title image7')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE_7.jpg");
-
-    g.selectAll('.image7')
-      .attr('opacity', 0);
-
-
-//Indoor Localisation
-    g.append('svg:image')
-      .attr('class', 'title image8')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr("width", width/1.3)
-      .attr("height", height/1.3)
-      .attr("xlink:href", "images/SDE4/SDE_8.jpg");
-
-    g.selectAll('.image8')
-      .attr('opacity', 0);
 
 
 
